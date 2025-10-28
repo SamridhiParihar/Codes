@@ -1,0 +1,10 @@
+Two ways :
+    1. Adjacency Matrix  ( it can be used for smaller graphs but not used
+                               because it ends up taking more space than required )
+    2.  Adjacency List
+
+
+
+    Representation	    Space	Edge        lookup	Iterating neighbors
+    Adjacency Matrix	O(V²)	O(1)	           O(V)
+    Adjacency List	    O(V+E)	O(deg(v))	     O(deg(v))

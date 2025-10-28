@@ -1,0 +1,9 @@
+4 ways to create a thread :
+    1. extending a thread class
+    2. extends the runnable interface
+    3. implements the runnable interface as anonymous class
+    4. implements the runnable interface as lambda expression
+
+* Jvm will stay alive as long as there are any remaining thread running even if Main thread has terminated ( example 8) { if don't want this behavior mark them as
+    deamon thread}
+* it is also possible for one thread to wait for another thread to terminate
