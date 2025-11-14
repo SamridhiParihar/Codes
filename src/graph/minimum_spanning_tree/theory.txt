@@ -1,0 +1,46 @@
+Given :
+    An  undirected , weighted graph with N node and M edges
+
+Spanning Tree:
+    A Tree in which :
+        1. N nodes and N-1 edges
+        2. all nodes are reachable from each other
+    For Minimum Spanning Tree :
+        - considering all spanning tree with minimum possible total edge weight
+
+
+Prim's Algorithm:
+    Greedy is the intuition behind it
+
+DSU(Disjoint Set Union):
+    - it can find if two nodes belongs to same set or not in o(1) tc which would be done by
+        dfs in o(v+e) tc
+    - helps in determining parents
+    - works for dynamic graph ( graph changing at different steps )
+    - I.Union:
+        1. By Rank
+        2. By Size
+    -II.Find Parent
+    - steps: for all edges (u-v)
+        : find ultimate parent of u and v that is pu and pv
+        : find ranks of ultimate parent
+        : connect the smaller rank with larger rank
+            if ranks are equal connect anyone to anyone and increase the parent rank
+      : at last just find parents for everyone
+        :Tc: O(4*alpha) nearly constant because alpha value is nearly 1
+            α(n) is the inverse of the Ackermann function, a function that grows super fast.
+            But its inverse grows unbelievably slowly.
+            The Practical Meaning of α(n)
+            Even for n = number of atoms in the universe (~10⁸⁰):
+            α(n) ≤ 4
+            Yes. Literally 4.
+            For every practical value of n you will ever see in CP or real world:
+            α(n) = 4 (or less)
+            So DSU operations are effectively:
+            Almost O(1)
+
+
+** note (In DSU) **
+    just make sure to use either unionByRank or unionBySize don't use both of them together
+
+Kruskal Algorithm:
