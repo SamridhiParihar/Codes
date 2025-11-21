@@ -1,0 +1,13 @@
+Kosaraju Algorithm :
+    - It is only for strongly connected graph
+    - thought process is :
+        i. reversal of each node won't impact the scc ( they can still be intact )
+        ii. to cater the starting point in scc , sorting wrt to finishing time will work
+
+    - alogrithm :
+        -- sort the edges based on finishing time
+        -- reverse all the edges of the graph ( reverse the graph )
+        -- Do the DFS
+
+
+
